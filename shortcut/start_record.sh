@@ -1,0 +1,1 @@
+systemctl --user restart thermal_record.service

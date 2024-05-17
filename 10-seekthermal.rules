@@ -1,0 +1,3 @@
+SUBSYSTEM=="usb", ATTRS{idVendor}=="289d", ATTRS{idProduct}=="0010", GROUP="users", MODE:="0666", SYMLINK+="usb/seekthermal/pir206.$attr{busnum}.$attr{devpath}.$attr{devnum}"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="289d", ATTRS{idProduct}=="0011", GROUP="users", MODE:="0666", SYMLINK+="usb/seekthermal/pir324.$attr{busnum}.$attr{devpath}.$attr{devnum}"
+ACTION=="add", ATTRS{idVendor}=="289d", ATTR{power/autosuspend}="-1", ATTR{power/control}="on", ATTR{power/level}="on"

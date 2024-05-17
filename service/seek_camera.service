@@ -1,0 +1,10 @@
+[Unit]
+Description= open seek camera
+
+[Service]
+ExecStart= /var/thermal/start_seek.sh 
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
